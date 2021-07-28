@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "046c4789-3f5d-4df8-9b96-bc6d409cbdbe",
+		"name": "Empresa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombres",
+							"value": "David",
+							"type": "text"
+						},
+						{
+							"key": "apellidos",
+							"value": "Florez",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "3208225163",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "davidflorezmz1@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9090/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombres",
+							"value": "Daniel",
+							"type": "text"
+						},
+						{
+							"key": "apellidos",
+							"value": "Florez",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "3208225168",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "danimz1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9090/editar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"editar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarporId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/trabajador?id=29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"trabajador"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "29"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BorrarporId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/eliminar?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"eliminar"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/trabajadores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"trabajadores"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
